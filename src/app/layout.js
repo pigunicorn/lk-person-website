@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 // 定义元数据
 export const metadata = {
-  title: "Demo",
+  title: "Lk-Portfolio-Websites",
   description: "",
 };
 

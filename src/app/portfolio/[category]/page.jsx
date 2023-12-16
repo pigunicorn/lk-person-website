@@ -17,7 +17,10 @@ const getData = (cat) => {
 
 const Category = ({ params }) => {
   const data = getData(params.category);
-  console.log(data)
+  
+  const imageWidth = params.category === "applications" ? 450 : undefined;
+  const imageHeight = params.category === "applications" ? 580 : undefined;
+  const isfill = params.category === "applications" ? false : true;
   return (
     <div className={styles.container}>
       <h1 className={styles.catTitle}>{params.category}</h1>
@@ -32,9 +35,11 @@ const Category = ({ params }) => {
           <div className={styles.imgContainer}>
             <Image
               className={styles.img}
-              fill={true}
+              fill={isfill}
               src={item.image}
               alt=""
+              width={imageWidth}
+              height={imageHeight}
             />
           </div>
         </div>

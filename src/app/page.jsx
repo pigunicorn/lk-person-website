@@ -13,7 +13,7 @@ export default function Home() {
         <p className={styles.desc}>
           We are a digital design agency based in China. We create beautiful
         </p>
-        <Button url="/portfolio" text="See Our Works"/>
+        <Button url="/portfolio" text="See My Works"/>
       </div>
       <div className={styles.item}>
         <Image src={Hero} alt="" className={styles.img} />
