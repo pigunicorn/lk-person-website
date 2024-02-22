@@ -11,7 +11,7 @@ export default function Home() {
           Better design for your digital products.
         </h1>
         <p className={styles.desc}>
-          We are a digital design agency based in China. We create beautiful
+         Welcome to my portfolio website!
         </p>
         <Button url="/portfolio" text="See My Works"/>
       </div>
